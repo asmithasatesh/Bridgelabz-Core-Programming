@@ -12,8 +12,11 @@ namespace CoreProgramming
             return couponList.Contains(coupon);
         }
     }
+
+
     class Coupon_Numbers
     {
+
         public static void ReadInput()
         {
             //local variables
@@ -31,13 +34,13 @@ namespace CoreProgramming
 
         }
 
+
         private static void GenerateCoupon(int couponStart,int couponEnd ,List<int> couponList)
         {
 
             //To create random coupon
             Random random = new Random();
             int coupon,count=0;
-            int j=3;
             bool isExist;
 
             for (int i = 1;couponList.Count < couponEnd-couponStart; i++)
